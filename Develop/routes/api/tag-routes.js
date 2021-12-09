@@ -37,7 +37,7 @@ router.post("/", async (req, res) => {
   Tag.create({
     tag_name: req.body.tag_name,
   })
-    .then((tagg) => res.join(tagg))
+    .then((tagg) => res.status(200).json(tagg))
     .catch((err) => {
       console.log(err);
       res.status(500).json(err);
@@ -56,7 +56,7 @@ router.put("/:id", async (req, res) => {
         res.status(404).json({ message: "No Tag found with this id" });
         return;
       }
-      res.json(tag);
+      return res.json(tag);
     })
     .catch((err) => {
       console.log(err);
@@ -73,10 +73,10 @@ router.delete("/:id", async (req, res) => {
       },
     });
 
-    if (!deleteTag) {
-      res.status(404).json({ message: "No Tag found with this id!" });
-      return;
-    }
+    // if (!deleteTag) {
+    //   res.status(404).json({ message: "No Tag found with this id!" });
+    //   return;
+    // }
 
     res.status(200).json(deleteTag);
   } catch (err) {
