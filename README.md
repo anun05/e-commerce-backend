@@ -20,7 +20,7 @@
   ## Usage
   It is the backend of an e-commerce site that connects the routes of the information needed.
  
-  Demo video link: [Demo Video](https://watch.screencastify.com/v/sAzo40xm2VkbPK0wsl9b)
+  Demo video link: [Demo Video](https://watch.screencastify.com/v/sAzo40xm2VkbPK0wsl9b) [Demo video pt.2](https://watch.screencastify.com/v/PXxhpy31hb6UOspCsksn)
 
 
   ## Contributing
